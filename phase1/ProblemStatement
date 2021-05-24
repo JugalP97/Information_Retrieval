@@ -1,1 +1,12 @@
+The objective of this project is to compare two approaches to tokenize and downcase all words in a collection of HTML documents. Each program should read a directory name for the input documents from the command line and a directory name for the output documents from the command line. The program should produce three things:
+1. a directory of all tokenized documents (one output file per input file)
+2. a file of all tokens and their frequencies sorted by token
+3. a file of all tokens and their frequencies sorted by frequency
 
+You may use the UNIX sort facility to sort the output files. However, there must be a single command line call to your function, e.g.,
+tokenize input-dir output-dir
+Program Testing
+The set of files to be preprocessed is available in this compressed tarfile or this files directory. For initial testing, copy a few of these files into your home directory for processing. For final testing, use the full path to these files as the input and your own path for the output to conserve disk space. There is about 12 megs of data, and managing data within your quota is your business. You are free to store the files on your own machine.
+
+Program Documentation.
+After your internal documentation (comments) are complete, write a report that provides a short executive summary of your programs. In particular, discuss how you handled punctuation and numbers, and describe how you calculated the frequency of each word. Identify some HTML constructs or words which are incorrectly tokenized (if any) and discuss why your program does not handle them properly. Also, discuss the efficiency of your frequency program in terms of order of magnitude and timings (cpu time, elapsed time). Include a small graph or table of time versus number of documents processed. The entire document should be no more than four pages in length. You should discuss the differences between the results and the efficiency between the two versions of the solution.
